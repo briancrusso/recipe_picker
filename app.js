@@ -15,6 +15,9 @@ $(document).ready(function() {
             url: url,
             success: function(data) {
                 console.log(data);
+                if (data.StatusCode === 403) {
+                  alert('This recipe is dumb anyways. Refresh and try again');
+                }
                 $("#recipeTitle").html(data.Title);
                 $("#instructions").append(data.Instructions);
                 $.each(data.Ingredients, function(index) {

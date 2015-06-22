@@ -60,4 +60,15 @@ button {
     overflow: scroll;
     background-color: white;
 }
+
+#recipeTitle {
+      font-size: 2.5em;
+    letter-spacing: .25em;
+    font-family: 'Amatic SC', cursive;
+    padding-bottom: .5em;
+}
+
+#ingredients {
+    padding-bottom: .5em;
+}
 }

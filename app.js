@@ -16,8 +16,13 @@ $(document).ready(function() {
             success: function(data) {
                 console.log(data);
                 $("#recipeTitle").html(data.Title);
-                $("#ingredients").html(data.Ingredients[0].Name);
-                $("#instructions").html(data.Instructions);
+                $("#instructions").append(data.Instructions);
+                $.each(data.Ingredients, function(index) {
+                    $("#ingredients ul").append("<li>" + data.Ingredients[index].Quantity + " " + data.Ingredients[index].Unit + " " + data.Ingredients[index].Name + "</li>");
+                    //        $("#ingredients ul").append(data.Ingredients[index].Unit + " ");
+                    //        $("#ingredients ul").append(data.Ingredients[index].Name);
+                    console.log(index);
+                });
             }
         });
     }

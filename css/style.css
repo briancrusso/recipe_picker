@@ -92,13 +92,13 @@ ul {
 
 @media only screen and (max-width: 650px) {
     h1 {
-        font-size: 2em;
+        font-size: 3em;
     }
     h2 {
-        font-size: 1.25em;
+        font-size: 1.75em;
     }
     button {
-        font-size: 1rem;
+        font-size: 1.5rem;
         border-radius: .5rem;
         padding: .25rem .5rem;
     }

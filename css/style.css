@@ -108,11 +108,12 @@ ul {
     }
     .main {
         height: 2em;
-        background-size: 50%;
+        background-size: 60%;
         background-position: top;
     }
     .recipe {
         max-height: 10em;
+        margin-top: 0em;
     }
     #recipeTitle {
         font-size: 1.75em;
